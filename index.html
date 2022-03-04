@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>first class</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        padding: 0 20px;
+        margin: 0 50px;
+      }
+      body {
+        display: flex;
+      }
+
+      .child {
+        background-color: black;
+        color: white;
+        height: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="output"></div>
+    <div ondragover="preventing()" ondrop="DropNow()" class="box">
+      <div draggable="true" ondragstart="statDrag()" class="child">
+        Drag me Please!
+      </div>
+    </div>
+    <div ondragover="preventing()" ondrop="DropNow()" class="box"></div>
+    <div ondragover="preventing()" ondrop="DropNow()" class="box"></div>
+    <div ondragover="preventing()" ondrop="DropNow()" class="box"></div>
+    <div ondragover="preventing()" ondrop="DropNow()" class="box"></div>
+    <div ondragover="preventing()" ondrop="DropNow()" class="box"></div>
+  </body>
+  <script src="DragandDrop.js"></script>
+</html>
